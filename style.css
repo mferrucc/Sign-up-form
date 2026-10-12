@@ -1,4 +1,188 @@
-*   {
+@import url('https://fonts.cdnfonts.com/css/norse');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Barra lateral izquierda con la imagen de plantas */
+.leftbar {
+    background-image: url("media/image-left.avif");
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Franja oscura central del logo compacta y proporcionada */
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+/* Imagen del icono/logo de Odin */
+.logo-box img.odin-logo {
+    height: 65px;
+    width: auto;
+}
+
+.logo-box h1 {
+    font-family: 'Norse', sans-serif; /* Aplica la fuente correctamente cargada desde el CDN */
+    font-size: 5.5rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.photo-credit {
+    color: white;
+    font-size: 0.75rem;
+    padding-bottom: 15px;
+}
+
+.photo-credit a {
+    color: white;
+}
+
+/* Contenedor derecho principal */
+.main-content {
+    background-color: #f9fafb;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    padding: 40px;
+}
+
+.header {
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #111827;
+}
+
+.header .bold-text {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* Tarjeta del formulario */
+.form-card {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: 30px;
+}
+
+.form-card h3 {
+    font-size: 1.4rem;
+    color: #111827;
+    margin-bottom: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #4b5563;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 6px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.form-group input.error {
+    border-color: #b91c1c;
+}
+
+/* Pie de formulario */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer button {
+    background-color: #596d48;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer button:hover {
+    background-color: #4a5a3b;
+}
+
+.footer p {
+    font-size: 0.95rem;
+    color: #111827;
+}
+
+.footer a {
+    color: #596d48;
+    text-decoration: none;
+    font-weight: bold;
 }

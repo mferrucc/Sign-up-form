@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,68 @@
     <title>Sign Up form exercise</title>
 </head>
 <body>
+    <div class="leftbar">
+        <div class="logo-container">
+            <!-- Asegúrate de tener tu logo o cámbialo por una etiqueta img si prefieres -->
+            <div class="logo-box">
+                <img src="media/odin-lined.png" alt="Odin Logo" class="odin-logo"> <!-- Opcional si tienes el logo en imagen -->
+                <h1>ODIN</h1>
+            </div>
+        </div>
+        <div class="photo-credit">
+            Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com" target="_blank">Unsplash</a>
+        </div>
+    </div>
     
+    <div class="main-content">
+        <div class="content">
+            <div class="header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p class="bold-text">You <em>know</em> you want to.</p>
+            </div>
+            
+            <div class="form-card">
+                <h3>Let's do this!</h3>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="txtFirstName">FIRST NAME</label>
+                            <input type="text" id="txtFirstName" value="Thor">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="txtLastName">LAST NAME</label>
+                            <input type="text" id="txtLastName" value="Odinson">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="txtEmail">EMAIL</label>
+                            <input type="email" id="txtEmail" placeholder="correo@dominio.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="txtPhone">PHONE NUMBER</label>
+                            <input type="tel" id="txtPhone" pattern="[0-9]{7-15}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="txtPassword">PASSWORD</label>
+                            <input type="password" id="txtPassword" class="error">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtPassword2">CONFIRM PASSWORD</label>
+                            <input type="password" id="txtPassword2" class="error">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="footer">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="/sign-in">Log in</a></p>
+            </div>
+        </div>   
+    </div>
 </body>
 </html>
